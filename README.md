@@ -1,9 +1,4 @@
-✅ README corrigé pour Recon-X V1 (Public)
-
-Je te propose de remplacer le README actuel par celui-ci, qui correspond à la version publique (7 modules) :
-
-markdown
-# 🔍 Recon-X
+ # 🔍 Recon-X
 
 > **Automated OSINT toolkit for attack surface analysis.**
 > For authorized security testing only.
