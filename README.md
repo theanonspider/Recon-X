@@ -1,19 +1,19 @@
 # 🔍 Recon-X
 
-> **Automated OSINT toolkit for attack surface analysis and digital surveillance.**
-> For authorized security testing only.
+> **Boîte à outils OSINT automatisée pour l'analyse de surface d'attaque et la surveillance numérique.**
+> Pour les tests de sécurité autorisés uniquement.
 
 ---
 
 ## 📖 Description
 
-Recon-X is an automated OSINT reconnaissance tool designed for security professionals. It collects and analyzes publicly available information about a target domain to map the attack surface before a penetration test.
+Recon-X est un outil de reconnaissance OSINT automatisé conçu pour les professionnels de la sécurité. Il collecte et analyse les informations publiquement disponibles sur une cible pour cartographier la surface d'attaque avant un test d'intrusion.
 
 ---
 
-## ⚠️ Warning
+## ⚠️ Avertissement
 
-**This tool is for authorized use only.** Always obtain written permission before scanning any target.
+**Cet outil est destiné à un usage autorisé uniquement.** Obtenez toujours une autorisation écrite avant d'analyser une cible.
 
 ---
 
@@ -24,41 +24,40 @@ git clone https://github.com/theanonspider/Recon-X.git
 cd Recon-X
 pip install -r requirements.txt
 
-🚀 Usage
+🚀 Utilisation
 
 bash
-# Create authorization token (required)
+# Créer le token d'autorisation (obligatoire)
 echo "RECON_X_AUTHORIZED" > reconx.token
 
-# Run all modules
-python reconx.py --target example.com
+# Lancer tous les modules
+python reconx.py --target exemple.com
 
-# Run specific module
-python reconx.py --target example.com --module domain_dns
+# Lancer un module spécifique
+python reconx.py --target exemple.com --module domain_dns
 
-# Custom output directory
-python reconx.py --target example.com --output ./results
-
+# Dossier de sortie personnalisé
+python reconx.py --target exemple.com --output ./resultats
 🧩 Modules
 
 Module	Description
-domain_dns	WHOIS lookup, DNS resolution, SPF/DKIM/DMARC checks
-subdomain_discovery	crt.sh scraping + subdomain bruteforce
-port_scanning	Common port scanning + banner grabbing
-email_accounts	Email pattern generation + Have I Been Pwned
-web_surface	Light crawling, admin panel detection, tech fingerprinting
-social_media	Social media profile search (8 platforms)
-report	JSON + HTML report generation
-📄 Output
+domain_dns	Recherche WHOIS, résolution DNS, vérification SPF/DKIM/DMARC
+subdomain_discovery	Scraping crt.sh + bruteforce de sous-domaines
+port_scanning	Scan des ports courants + récupération de bannières
+email_accounts	Génération de patterns d'emails + Have I Been Pwned
+web_surface	Crawling léger, détection de panneaux d'administration, technologies
+social_media	Recherche de profils sociaux (8 plateformes)
+report	Génération de rapports JSON + HTML
+📄 Sortie
 
 text
 output/
-├── recon_example.com_20260730_143022.json   # Full results
-├── recon_example.com_20260730_143022.html   # HTML report
-🎨 CLI
+├── recon_exemple.com_20260730_143022.json   # Résultats complets
+├── recon_exemple.com_20260730_143022.html   # Rapport HTML
+🎨 Interface
 
-Styled command-line interface with colors and progress bars.
+Interface en ligne de commande stylée avec couleurs et barres de progression.
 
-👤 Author
+👤 Auteur
 
 @theanonspider
