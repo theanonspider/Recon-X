@@ -1,0 +1,17 @@
+{
+    "enabled_modules": [
+        "domain_dns",
+        "subdomain_discovery",
+        "port_scanning",
+        "email_accounts",
+        "web_surface",
+        "social_media",
+        "report"
+    ],
+    "output_dir": "./output",
+    "report_format": "html",
+    "threads": 10,
+    "timeout": 30,
+    "user_agent": "Recon-X/1.0 (Educational OSINT Tool)",
+    "token_required": true
+}
