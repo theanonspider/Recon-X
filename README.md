@@ -1,19 +1,19 @@
 # 🔍 Recon-X
 
-> **Boîte à outils OSINT automatisée pour l'analyse de surface d'attaque et la surveillance numérique.**
-> Pour les tests de sécurité autorisés uniquement.
+> **Automated OSINT toolkit for attack surface analysis and digital surveillance.**
+> For authorized security testing only.
 
 ---
 
 ## 📖 Description
 
-Recon-X est un outil de reconnaissance OSINT automatisé conçu pour les professionnels de la sécurité. Il collecte et analyse les informations publiquement disponibles sur une cible pour cartographier la surface d'attaque avant un test d'intrusion.
+Recon-X is an automated OSINT reconnaissance tool designed for security professionals. It collects and analyzes publicly available information about a target domain to map the attack surface before a penetration test.
 
 ---
 
-## ⚠️ Avertissement
+## ⚠️ Warning
 
-**Cet outil est destiné à un usage autorisé uniquement.** Obtenez toujours une autorisation écrite avant d'analyser une cible.
+**This tool is for authorized use only.** Always obtain written permission before scanning any target.
 
 ---
 
@@ -24,22 +24,41 @@ git clone https://github.com/theanonspider/Recon-X.git
 cd Recon-X
 pip install -r requirements.txt
 
-# Créer le token d'autorisation (obligatoire)
+🚀 Usage
+
+bash
+# Create authorization token (required)
 echo "RECON_X_AUTHORIZED" > reconx.token
 
-# Lancer
-python reconx.py --target exemple.com
+# Run all modules
+python reconx.py --target example.com
+
+# Run specific module
+python reconx.py --target example.com --module domain_dns
+
+# Custom output directory
+python reconx.py --target example.com --output ./results
 
 🧩 Modules
 
-Domaine & DNS
-Découverte de sous-domaines
-Scan de ports
-Emails & Comptes
-Surface web
-Réseaux sociaux & Médias
-Génération de rapports
+Module	Description
+domain_dns	WHOIS lookup, DNS resolution, SPF/DKIM/DMARC checks
+subdomain_discovery	crt.sh scraping + subdomain bruteforce
+port_scanning	Common port scanning + banner grabbing
+email_accounts	Email pattern generation + Have I Been Pwned
+web_surface	Light crawling, admin panel detection, tech fingerprinting
+social_media	Social media profile search (8 platforms)
+report	JSON + HTML report generation
+📄 Output
 
-👤 Auteur
+text
+output/
+├── recon_example.com_20260730_143022.json   # Full results
+├── recon_example.com_20260730_143022.html   # HTML report
+🎨 CLI
+
+Styled command-line interface with colors and progress bars.
+
+👤 Author
 
 @theanonspider
