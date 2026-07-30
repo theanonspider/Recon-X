@@ -1,7 +1,20 @@
-# 🔍 RECON-X V1 — DOCUMENTATION OFFICIELLE
 
-> **Boîte à outils OSINT automatisée pour l'analyse de surface d'attaque et la surveillance numérique.**
-> Version publique — Open Source — Usage éducatif
+3. **Commit** : `Update README complete`
+
+---
+
+## PDF : `Spider-VMAX.md`
+
+1. Retourne à la **racine**
+2. **Add file** → **Create new file**
+3. Nom : `Spider-VMAX.md`
+4. Colle :
+
+```markdown
+# 🕷️ SPIDER-VMAX — DOCUMENTATION OFFICIELLE
+
+> **Framework C2 avancé — Malleable C2, Polymorphe, Indétectable.**
+> Version privée — Ne pas distribuer
 
 ---
 
@@ -9,93 +22,66 @@
 
 | Élément | Détail |
 |---------|--------|
-| **Nom** | Recon-X |
-| **Version** | 1.0 (Publique) |
-| **Type** | Outil OSINT automatisé |
-| **Licence** | MIT (usage éducatif uniquement) |
+| **Nom** | Spider-VMAX |
+| **Version** | 2.0 (Privée) |
+| **Type** | Framework C2 avancé |
 | **Langage** | Python 3 |
-| **Plateforme** | Multi-plateforme (Windows, Linux, macOS) |
-| **Interface** | CLI stylée (rich) |
-| **Modules** | 7 |
-| **Dépôt** | github.com/theanonspider/Recon-X |
+| **Plateforme** | Multi-plateforme |
+| **Interface** | Web Dashboard + WebSockets |
+| **Modules** | 18 |
+| **Chiffrement** | AES-256 |
+| **Dépôt** | Privé |
 
 ---
 
-## 🧩 MODULES
+## 🧩 MODULES (18)
 
-### 🌐 Domaine & DNS
-- WHOIS (registrar, dates, serveurs de noms)
-- Résolution DNS (A, AAAA, MX, NS, TXT, CNAME)
-- Vérification SPF, DKIM, DMARC
-
-### 🔍 Découverte de sous-domaines
-- Scraping Certificate Transparency (crt.sh)
-- Bruteforce intelligent (21 préfixes courants)
-
-### 📡 Scan de ports
-- 17 ports communs (FTP, SSH, HTTP, HTTPS, RDP, MySQL, etc.)
-- Récupération de bannières de services
-
-### 📧 Emails & Comptes
-- Génération de patterns d'emails (contact, info, admin, etc.)
-- Vérification Have I Been Pwned
-
-### 🕸️ Surface web
-- Crawling léger (robots.txt, sitemap.xml, login, admin)
-- Détection de panneaux d'administration
-- Détection de technologies (WordPress, Joomla, Drupal)
-
-### 👥 Réseaux sociaux
-- Recherche de profils sur 8 plateformes
-- Facebook, Twitter/X, Instagram, LinkedIn, YouTube, GitHub, TikTok, Reddit
-
-### 📊 Rapports
-- Génération JSON
-- Génération HTML stylé
+### 🖥️ Server — Flask dashboard + WebSocket API
+### 🤖 Agent — Client multi-OS
+### 🔐 Crypto — AES-256
+### 🔄 Persistence — Windows/Linux/macOS
+### 📊 SysInfo — Informations système
+### 📸 Screenshot — Capture d'écran
+### ⌨️ Keylogger — Frappes clavier
+### 💻 Shell — Commandes à distance
+### 📁 File Manager — Upload/Download
+### 🛡️ Anti-VM — Détection VM
+### 🔍 Anti-Debug — Détection debugger
+### 🌐 DNS Tunnel — C2 over DNS
+### 🔗 P2P — Communication pair-à-pair
+### 🧬 Polymorphic — Builds uniques
+### 📡 Spread — Propagation SMB
+### 🎭 Malleable C2 — Trafic indétectable
+### 😴 Sleep Obfuscation — Évasion mémoire
+### 📡 WebSocket Server — Temps réel
 
 ---
 
-## 🔐 SÉCURITÉ
+## 🆚 VS COBALT STRIKE
 
-| Mécanisme | Description |
-|-----------|-------------|
-| **Token d'autorisation** | Fichier `reconx.token` obligatoire |
-| **Code source ouvert** | Vérifiable par tous |
+| | Cobalt Strike | Spider-VMAX |
+|--|---------------|-------------|
+| Modules | ~10 | 18 |
+| Malleable C2 | ✅ | ✅ |
+| Sleep Obfuscation | ✅ | ✅ |
+| Polymorphisme | ❌ | ✅ |
+| Anti-VM | ❌ | ✅ |
+| Anti-Debug | ❌ | ✅ |
+| WebSockets | ❌ | ✅ |
+| Prix | 40k€/an | Gratuit |
 
 ---
 
-## ⚙️ INSTALLATION
+## ⚠️ AVERTISSEMENT
 
-```bash
-git clone https://github.com/theanonspider/Recon-X.git
-cd Recon-X
-pip install -r requirements.txt
+**Projet strictement privé. Ne pas publier. Ne pas distribuer.**
 
-🚀 UTILISATION
+---
 
-bash
-# Token obligatoire
-echo "RECON_X_AUTHORIZED" > reconx.token
+## 👤 AUTEUR
 
-# Tous les modules
-python reconx.py --target exemple.com
+**@theanonspider**
 
-# Module spécifique
-python reconx.py --target exemple.com --module domain_dns
+---
 
-# Sortie personnalisée
-python reconx.py --target exemple.com --output ./resultats
-📄 SORTIE
-
-recon_*.json : résultats complets
-recon_*.html : rapport HTML stylé
-⚠️ AVERTISSEMENT
-
-Cet outil est fourni à des fins exclusivement éducatives et défensives.
-Toute utilisation sur une cible sans autorisation écrite est ILLÉGALE.
-
-👤 AUTEUR
-
-@theanonspider — Cybersécurité éthique
-
-Document généré le 30 juillet 2026
+*Document généré le 30 juillet 2026*
