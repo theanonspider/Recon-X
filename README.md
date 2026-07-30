@@ -1,89 +1,48 @@
-# 🕷️ Spider-VMAX (Private)
+✅ README corrigé pour Recon-X V1 (Public)
 
-> **Advanced Command & Control framework — Malleable C2, Polymorphic, Undetectable.**
-> Private version — Do not distribute.
+Je te propose de remplacer le README actuel par celui-ci, qui correspond à la version publique (7 modules) :
 
----
+markdown
+# 🔍 Recon-X
 
-## 📊 Statistics
-
-| Element | Count |
-|---------|-------|
-| Modules | 18 |
-| Interface | Web Dashboard + WebSockets |
-| C2 Protocols | HTTP/HTTPS, DNS, P2P |
-| Encryption | AES-256 |
-| Total files | 22 |
+> **Automated OSINT toolkit for attack surface analysis.**
+> For authorized security testing only.
 
 ---
 
-## 🧩 Modules
+## 📖 Description
 
-### Core
-- **Server** — Flask dashboard + WebSocket API
-- **Agent** — Multi-OS client (Windows/Linux/macOS)
-- **Crypto** — AES-256 encryption
-- **Persistence** — Windows/Linux/macOS
-- **SysInfo** — System information collection
-- **Screenshot** — Screen capture
-- **Keylogger** — Keyboard input capture
-- **Shell** — Remote command execution
-- **File Manager** — Upload/download files
-- **Anti-VM** — VM detection
-- **Anti-Debug** — Debugger detection
+Recon-X is an OSINT reconnaissance tool for security professionals. It collects publicly available information about a target domain to map the attack surface before a penetration test.
 
-### Advanced
-- **DNS Tunnel** — C2 over DNS queries
-- **P2P** — Peer-to-peer agent communication
-- **Polymorphic** — Unique agent builds
-- **Spread** — Network propagation (SMB)
-- **Malleable C2** — Traffic obfuscation (jQuery, Google Analytics, Slack, CDN)
-- **Sleep Obfuscation** — Memory evasion (Ekko, Foliage)
-- **WebSocket Server** — Real-time dashboard
+---
+
+## ⚠️ Warning
+
+**Authorized use only.** Always obtain written permission before scanning.
 
 ---
 
 ## ⚙️ Installation
 
 ```bash
-git clone [PRIVATE_URL]
-cd Spider-VMAX
+git clone https://github.com/theanonspider/Recon-X.git
+cd Recon-X
 pip install -r requirements.txt
-
 🚀 Usage
 
 bash
-# Token required
-echo "SPIDER_C2_AUTHORIZED" > spiderc2.token
+echo "RECON_X_AUTHORIZED" > reconx.token
+python reconx.py --target example.com
+🧩 Modules
 
-# Start server
-python spidervmax.py server
+Domain & DNS
+Subdomain Discovery
+Port Scanning
+Email & Accounts
+Web Surface
+Social Media
+Report Generation
 
-# Generate agent
-python spidervmax.py generate --type windows
+👤 Author
 
-# Network scan
-python spidervmax.py scan --target 192.168.1
-🎨 Web Dashboard
-
-URL: http://localhost:8080
-Login: admin / SpiderVMAX-2024!
-Real-time updates via WebSockets
-Live console, agent map, command center
-🆚 vs Cobalt Strike
-
-Cobalt Strike	Spider-VMAX
-Modules	~10	18
-Malleable C2	✅	✅
-Sleep Obfuscation	✅	✅
-Polymorphic	❌	✅
-Anti-VM	❌	✅
-Anti-Debug	❌	✅
-WebSockets	❌	✅
-Price	€40k/yr	Free
-⚠️ Warning
-
-Private project. Do not distribute.
-Educational use only in isolated environments.
----
-
+@theanonspider
