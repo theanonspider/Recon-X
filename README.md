@@ -1,9 +1,3 @@
-
----
-
-## 3️⃣ RECON-X V1 (7 modules)
-
-```markdown
 # 🔍 Recon-X — OSINT Tool
 
 > ⚠️ **AVERTISSEMENT** — Usage exclusivement éducatif et défensif.  
@@ -37,18 +31,24 @@ Parfait pour les **pentests**, la **veille concurrentielle** ou les **investigat
 
 ```bash
 echo "RECONX_AUTHORIZED" > reconx.token
+```
 
-⚙️ Installation
-bash
+---
 
+## ⚙️ Installation
+
+```bash
 git clone https://github.com/theanonspider/Recon-X.git
 cd Recon-X
 pip install -r requirements.txt
 echo "RECONX_AUTHORIZED" > reconx.token
+```
 
-🚀 Exemples d’utilisation
-bash
+---
 
+## 🚀 Exemples d’utilisation
+
+```bash
 # 1. WHOIS + DNS
 python reconx.py domain-dns -t example.com
 
@@ -63,13 +63,22 @@ python reconx.py emails -t example.com
 
 # 5. Rapport complet
 python reconx.py report -o ./reports -f html
+```
 
-📄 Sortie
+---
 
-Rapports dans reports/ : JSON + HTML.
-⚖️ Licence
+## 📄 Sortie
+
+Rapports dans `reports/` : **JSON + HTML**.
+
+---
+
+## ⚖️ Licence
 
 Usage éducatif et défensif uniquement.
-👤 Auteur
 
-@theanonspider — Cybersécurité éthique. 🐺
+---
+
+## 👤 Auteur
+
+**@theanonspider** — Cybersécurité éthique. 🐺
